@@ -1,5 +1,6 @@
 # ZXHN-F660_Configuration
 disassemble and modify configuration bin 
+
 Usages:  createF660config.py <-c | -d> <inputfile (xml or bin)>
 
 inspired by @SebastienDuval and @ebux
