@@ -71,7 +71,7 @@ def assemble():
         f"zlib file saved {filepath}{(filename.split('.'))[0]}_outs/{((filename.split('.'))[0])}_compressed.zlib\n")
 
     # ----------------------------------block size and xml config file size
-    xml_size = struct.pack('!L', (os.path.getsize(filename)))
+    xml_size = struct.pack('!L', (os.path.getsize(f'{filepath}{filename}')))
     block_size = struct.pack('!L', (os.path.getsize(
         f"{filepath}{(filename.split('.'))[0]}_outs/{((filename.split('.'))[0])}_compressed.zlib")))
 
